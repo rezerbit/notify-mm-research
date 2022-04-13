@@ -1,0 +1,201 @@
+{"timestamp":"2022-04-13 16:36:13.700 Z","level":"info","msg":"Server is initializing...","caller":"app/server.go:237","go_version":"go1.16.7"}
+{"timestamp":"2022-04-13 16:36:13.702 Z","level":"info","msg":"Starting websocket hubs","caller":"app/web_hub.go:93","number_of_hubs":8}
+{"timestamp":"2022-04-13 16:36:13.702 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 16:36:13.706 Z","level":"error","msg":"Failed to ping DB","caller":"sqlstore/store.go:272","error":"dial tcp 172.21.0.2:5432: connect: connection refused","retrying in seconds":10}
+{"timestamp":"2022-04-13 16:36:23.673 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 16:36:23.674 Z","level":"error","msg":"Failed to ping DB","caller":"sqlstore/store.go:272","error":"dial tcp 172.21.0.2:5432: connect: connection refused","retrying in seconds":10}
+{"timestamp":"2022-04-13 16:36:33.677 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 16:36:33.886 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"migrations"}
+{"timestamp":"2022-04-13 16:36:36.280 Z","level":"info","msg":"The database schema version has been set","caller":"sqlstore/upgrade.go:135","version":"6.3.7"}
+{"timestamp":"2022-04-13 16:36:37.569 Z","level":"info","msg":"Loaded system translations","caller":"i18n/i18n.go:93","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"timestamp":"2022-04-13 16:36:37.595 Z","level":"info","msg":"License key from https://mattermost.com required to unlock enterprise features.","caller":"app/license.go:90"}
+{"timestamp":"2022-04-13 16:36:37.609 Z","level":"info","msg":"Current version is 6.3.7 (6.3.7/Thu Apr  7 13:04:32 UTC 2022/f4c68a97a1934994663fcb33dea0899238e79704/2fa46d17d792c4b2d334880d2923ac15d028b076)","caller":"app/server.go:514","current_version":"6.3.7","build_number":"6.3.7","build_date":"Thu Apr  7 13:04:32 UTC 2022","build_hash":"f4c68a97a1934994663fcb33dea0899238e79704","build_hash_enterprise":"2fa46d17d792c4b2d334880d2923ac15d028b076"}
+{"timestamp":"2022-04-13 16:36:37.670 Z","level":"info","msg":"Starting workers","caller":"jobs/workers.go:140"}
+{"timestamp":"2022-04-13 16:36:37.671 Z","level":"info","msg":"Starting schedulers.","caller":"jobs/schedulers.go:116"}
+{"timestamp":"2022-04-13 16:36:37.678 Z","level":"info","msg":"License key from https://mattermost.com required to unlock enterprise features.","caller":"app/license.go:90"}
+{"timestamp":"2022-04-13 16:36:37.743 Z","level":"warn","msg":"Fetching time of first server run failed. Setting to 'now'.","caller":"app/server.go:667"}
+{"timestamp":"2022-04-13 16:36:37.752 Z","level":"info","msg":"Migrating roles to database.","caller":"app/migrations.go:32"}
+{"timestamp":"2022-04-13 16:36:38.021 Z","level":"info","msg":"Migrating emojis config to database.","caller":"app/migrations.go:109"}
+{"timestamp":"2022-04-13 16:36:39.723 Z","level":"info","msg":"Starting up plugins","caller":"app/plugin.go:185"}
+{"timestamp":"2022-04-13 16:36:39.723 Z","level":"info","msg":"Syncing plugins from the file store","caller":"app/plugin.go:259"}
+{"timestamp":"2022-04-13 16:36:42.006 Z","level":"info","msg":"Ensuring Surveybot exists","caller":"app/plugin_api.go:925","plugin_id":"com.mattermost.nps"}
+{"timestamp":"2022-04-13 16:36:42.143 Z","level":"info","msg":"Surveybot created","caller":"app/plugin_api.go:925","plugin_id":"com.mattermost.nps"}
+{"timestamp":"2022-04-13 16:36:42.211 Z","level":"info","msg":"Upgrade detected. Checking if a survey should be scheduled.","caller":"app/plugin_api.go:925","plugin_id":"com.mattermost.nps"}
+{"timestamp":"2022-04-13 16:36:42.256 Z","level":"info","msg":"Scheduling next survey for May 4, 2022","caller":"app/plugin_api.go:925","plugin_id":"com.mattermost.nps"}
+{"timestamp":"2022-04-13 16:36:42.290 Z","level":"info","msg":"Sent notification of next survey to admins","caller":"app/plugin_api.go:925","plugin_id":"com.mattermost.nps"}
+{"timestamp":"2022-04-13 16:36:43.615 Z","level":"info","msg":"connectDatabase","caller":"app/plugin_api.go:925","plugin_id":"focalboard","dbType":"postgres"}
+{"timestamp":"2022-04-13 16:36:43.676 Z","level":"info","msg":"Post.Message has size restrictions","caller":"sqlstore/post_store.go:2207","max_characters":16383,"max_bytes":65535}
+{"timestamp":"2022-04-13 16:36:46.128 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyMentions"}
+{"timestamp":"2022-04-13 16:36:46.131 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifySubscriptions"}
+{"timestamp":"2022-04-13 16:36:46.132 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyLogger"}
+{"timestamp":"2022-04-13 16:36:46.164 Z","level":"info","msg":"Server.Start","caller":"app/plugin_api.go:925","plugin_id":"focalboard"}
+{"timestamp":"2022-04-13 16:36:46.308 Z","level":"error","msg":"Mail server connection test is failed","caller":"app/server.go:1141","error":"unable to connect: unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 16:36:46.327 Z","level":"info","msg":"Starting Server...","caller":"app/server.go:1163"}
+{"timestamp":"2022-04-13 16:36:46.327 Z","level":"info","msg":"Server is listening on [::]:8065","caller":"app/server.go:1236","address":"[::]:8065"}
+{"timestamp":"2022-04-13 16:37:58.488 Z","level":"info","msg":"Worker: Job is complete","caller":"migrations/worker.go:109","worker":"Migrations","job_id":"3rugqscotidmid38q7t8q5jrpo"}
+{"timestamp":"2022-04-13 16:47:07.122 Z","level":"warn","msg":"Failed to send welcome email on create user from signup","caller":"app/user.go:191","error":"unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 17:03:39.964 Z","level":"warn","msg":"Unrecognized config permissions tag value.","caller":"api4/config.go:380","tag_value":"sysconsole_write_*_read"}
+{"timestamp":"2022-04-13 17:17:47.982 Z","level":"error","msg":"Error while sending the email","caller":"app/notification_email.go:117","user_email":"notify@localhost","error":"unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 17:48:57.206 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": lookup mock-server on 127.0.0.11:53: no such host"}
+{"timestamp":"2022-04-13 17:49:03.488 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": lookup mock-server on 127.0.0.11:53: no such host"}
+{"timestamp":"2022-04-13 17:49:45.541 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": lookup mock-server on 127.0.0.11:53: no such host"}
+{"timestamp":"2022-04-13 17:50:54.590 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": lookup mock-server on 127.0.0.11:53: no such host"}
+{"timestamp":"2022-04-13 17:52:33.009 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": address forbidden, you may need to set AllowedUntrustedInternalConnections to allow an integration access to your internal network"}
+{"timestamp":"2022-04-13 17:56:37.088 Z","level":"error","msg":"Error while sending the email","caller":"app/notification_email.go:117","user_email":"notify@localhost","error":"unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 17:56:52.220 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": address forbidden, you may need to set AllowedUntrustedInternalConnections to allow an integration access to your internal network"}
+{"timestamp":"2022-04-13 18:02:10.395 Z","level":"info","msg":"Stopping Server...","caller":"app/server.go:922"}
+{"timestamp":"2022-04-13 18:02:10.395 Z","level":"info","msg":"stopping websocket hub connections","caller":"app/web_hub.go:113"}
+{"timestamp":"2022-04-13 18:02:10.406 Z","level":"info","msg":"Stopped workers","caller":"jobs/workers.go:353"}
+{"timestamp":"2022-04-13 18:02:10.406 Z","level":"info","msg":"Stopping schedulers.","caller":"jobs/schedulers.go:187"}
+{"timestamp":"2022-04-13 18:02:10.406 Z","level":"info","msg":"Schedulers stopped.","caller":"jobs/schedulers.go:119"}
+{"timestamp":"2022-04-13 18:02:10.411 Z","level":"info","msg":"Server stopped","caller":"app/server.go:1002"}
+{"timestamp":"2022-04-13 18:02:10.411 Z","level":"info","msg":"Shutting down plugins","caller":"app/plugin.go:339"}
+{"timestamp":"2022-04-13 18:02:10.424 Z","level":"info","msg":"Server.Shutdown","caller":"app/plugin_api.go:925","plugin_id":"focalboard"}
+{"timestamp":"2022-04-13 18:07:45.807 Z","level":"info","msg":"Server is initializing...","caller":"app/server.go:237","go_version":"go1.16.7"}
+{"timestamp":"2022-04-13 18:07:45.809 Z","level":"info","msg":"Starting websocket hubs","caller":"app/web_hub.go:93","number_of_hubs":8}
+{"timestamp":"2022-04-13 18:07:45.809 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 18:07:45.814 Z","level":"error","msg":"Failed to ping DB","caller":"sqlstore/store.go:272","error":"dial tcp 172.23.0.3:5432: connect: connection refused","retrying in seconds":10}
+{"timestamp":"2022-04-13 18:07:55.816 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 18:07:56.067 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"migrations"}
+{"timestamp":"2022-04-13 18:07:56.774 Z","level":"info","msg":"Loaded system translations","caller":"i18n/i18n.go:93","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"timestamp":"2022-04-13 18:07:56.789 Z","level":"info","msg":"License key from https://mattermost.com required to unlock enterprise features.","caller":"app/license.go:90"}
+{"timestamp":"2022-04-13 18:07:56.796 Z","level":"info","msg":"Current version is 6.3.7 (6.3.7/Thu Apr  7 13:04:32 UTC 2022/f4c68a97a1934994663fcb33dea0899238e79704/2fa46d17d792c4b2d334880d2923ac15d028b076)","caller":"app/server.go:514","current_version":"6.3.7","build_number":"6.3.7","build_date":"Thu Apr  7 13:04:32 UTC 2022","build_hash":"f4c68a97a1934994663fcb33dea0899238e79704","build_hash_enterprise":"2fa46d17d792c4b2d334880d2923ac15d028b076"}
+{"timestamp":"2022-04-13 18:07:56.796 Z","level":"info","msg":"Enterprise Build","caller":"app/server.go:523","enterprise_build":true}
+{"timestamp":"2022-04-13 18:07:56.796 Z","level":"info","msg":"Printing current working","caller":"app/server.go:529","directory":"/mattermost"}
+{"timestamp":"2022-04-13 18:07:56.796 Z","level":"info","msg":"Loaded config","caller":"app/server.go:530","source":"file:///mattermost/config/config.json"}
+{"timestamp":"2022-04-13 18:07:56.844 Z","level":"info","msg":"Starting workers","caller":"jobs/workers.go:140"}
+{"timestamp":"2022-04-13 18:07:56.844 Z","level":"info","msg":"Starting schedulers.","caller":"jobs/schedulers.go:116"}
+{"timestamp":"2022-04-13 18:07:56.970 Z","level":"info","msg":"License key from https://mattermost.com required to unlock enterprise features.","caller":"app/license.go:90"}
+{"timestamp":"2022-04-13 18:07:57.225 Z","level":"info","msg":"Starting up plugins","caller":"app/plugin.go:185"}
+{"timestamp":"2022-04-13 18:07:57.225 Z","level":"info","msg":"Syncing plugins from the file store","caller":"app/plugin.go:259"}
+{"timestamp":"2022-04-13 18:07:59.764 Z","level":"info","msg":"Ensuring Surveybot exists","caller":"app/plugin_api.go:925","plugin_id":"com.mattermost.nps"}
+{"timestamp":"2022-04-13 18:08:01.230 Z","level":"info","msg":"connectDatabase","caller":"app/plugin_api.go:925","plugin_id":"focalboard","dbType":"postgres"}
+{"timestamp":"2022-04-13 18:08:01.352 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyMentions"}
+{"timestamp":"2022-04-13 18:08:01.356 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifySubscriptions"}
+{"timestamp":"2022-04-13 18:08:01.357 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyLogger"}
+{"timestamp":"2022-04-13 18:08:01.370 Z","level":"info","msg":"Server.Start","caller":"app/plugin_api.go:925","plugin_id":"focalboard"}
+{"timestamp":"2022-04-13 18:08:01.485 Z","level":"error","msg":"Mail server connection test is failed","caller":"app/server.go:1141","error":"unable to connect: unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 18:08:01.496 Z","level":"info","msg":"Starting Server...","caller":"app/server.go:1163"}
+{"timestamp":"2022-04-13 18:08:01.496 Z","level":"info","msg":"Server is listening on [::]:8065","caller":"app/server.go:1236","address":"[::]:8065"}
+{"timestamp":"2022-04-13 18:08:05.820 Z","level":"info","msg":"Post.Message has size restrictions","caller":"sqlstore/post_store.go:2207","max_characters":16383,"max_bytes":65535}
+{"timestamp":"2022-04-13 18:12:56.475 Z","level":"info","msg":"Stopping Server...","caller":"app/server.go:922"}
+{"timestamp":"2022-04-13 18:12:56.475 Z","level":"info","msg":"stopping websocket hub connections","caller":"app/web_hub.go:113"}
+{"timestamp":"2022-04-13 18:12:56.491 Z","level":"info","msg":"Stopped workers","caller":"jobs/workers.go:353"}
+{"timestamp":"2022-04-13 18:12:56.491 Z","level":"info","msg":"Stopping schedulers.","caller":"jobs/schedulers.go:187"}
+{"timestamp":"2022-04-13 18:12:56.491 Z","level":"info","msg":"Schedulers stopped.","caller":"jobs/schedulers.go:119"}
+{"timestamp":"2022-04-13 18:12:56.494 Z","level":"info","msg":"Server stopped","caller":"app/server.go:1002"}
+{"timestamp":"2022-04-13 18:12:56.495 Z","level":"info","msg":"Shutting down plugins","caller":"app/plugin.go:339"}
+{"timestamp":"2022-04-13 18:12:56.511 Z","level":"info","msg":"Server.Shutdown","caller":"app/plugin_api.go:925","plugin_id":"focalboard"}
+{"timestamp":"2022-04-13 18:13:29.324 Z","level":"info","msg":"Server is initializing...","caller":"app/server.go:237","go_version":"go1.16.7"}
+{"timestamp":"2022-04-13 18:13:29.343 Z","level":"info","msg":"Starting websocket hubs","caller":"app/web_hub.go:93","number_of_hubs":8}
+{"timestamp":"2022-04-13 18:13:29.344 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 18:13:29.348 Z","level":"error","msg":"Failed to ping DB","caller":"sqlstore/store.go:272","error":"dial tcp 172.24.0.3:5432: connect: connection refused","retrying in seconds":10}
+{"timestamp":"2022-04-13 18:13:39.354 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 18:13:39.607 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"migrations"}
+{"timestamp":"2022-04-13 18:13:40.308 Z","level":"info","msg":"Loaded system translations","caller":"i18n/i18n.go:93","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"timestamp":"2022-04-13 18:13:40.323 Z","level":"info","msg":"License key from https://mattermost.com required to unlock enterprise features.","caller":"app/license.go:90"}
+{"timestamp":"2022-04-13 18:13:40.328 Z","level":"info","msg":"Current version is 6.3.7 (6.3.7/Thu Apr  7 13:04:32 UTC 2022/f4c68a97a1934994663fcb33dea0899238e79704/2fa46d17d792c4b2d334880d2923ac15d028b076)","caller":"app/server.go:514","current_version":"6.3.7","build_number":"6.3.7","build_date":"Thu Apr  7 13:04:32 UTC 2022","build_hash":"f4c68a97a1934994663fcb33dea0899238e79704","build_hash_enterprise":"2fa46d17d792c4b2d334880d2923ac15d028b076"}
+{"timestamp":"2022-04-13 18:13:40.328 Z","level":"info","msg":"Enterprise Build","caller":"app/server.go:523","enterprise_build":true}
+{"timestamp":"2022-04-13 18:13:40.369 Z","level":"info","msg":"Starting workers","caller":"jobs/workers.go:140"}
+{"timestamp":"2022-04-13 18:13:40.375 Z","level":"info","msg":"Starting schedulers.","caller":"jobs/schedulers.go:116"}
+{"timestamp":"2022-04-13 18:13:40.691 Z","level":"info","msg":"Starting up plugins","caller":"app/plugin.go:185"}
+{"timestamp":"2022-04-13 18:13:40.691 Z","level":"info","msg":"Syncing plugins from the file store","caller":"app/plugin.go:259"}
+{"timestamp":"2022-04-13 18:13:43.078 Z","level":"info","msg":"Ensuring Surveybot exists","caller":"app/plugin_api.go:925","plugin_id":"com.mattermost.nps"}
+{"timestamp":"2022-04-13 18:13:44.547 Z","level":"info","msg":"connectDatabase","caller":"app/plugin_api.go:925","plugin_id":"focalboard","dbType":"postgres"}
+{"timestamp":"2022-04-13 18:13:44.638 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyMentions"}
+{"timestamp":"2022-04-13 18:13:44.640 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifySubscriptions"}
+{"timestamp":"2022-04-13 18:13:44.641 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyLogger"}
+{"timestamp":"2022-04-13 18:13:44.644 Z","level":"info","msg":"Server.Start","caller":"app/plugin_api.go:925","plugin_id":"focalboard"}
+{"timestamp":"2022-04-13 18:13:44.754 Z","level":"error","msg":"Mail server connection test is failed","caller":"app/server.go:1141","error":"unable to connect: unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 18:13:44.761 Z","level":"info","msg":"Starting Server...","caller":"app/server.go:1163"}
+{"timestamp":"2022-04-13 18:13:44.761 Z","level":"info","msg":"Server is listening on [::]:8065","caller":"app/server.go:1236","address":"[::]:8065"}
+{"timestamp":"2022-04-13 18:13:45.879 Z","level":"info","msg":"Post.Message has size restrictions","caller":"sqlstore/post_store.go:2207","max_characters":16383,"max_bytes":65535}
+{"timestamp":"2022-04-13 18:13:55.346 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": address forbidden, you may need to set AllowedUntrustedInternalConnections to allow an integration access to your internal network"}
+{"timestamp":"2022-04-13 18:15:32.472 Z","level":"info","msg":"Stopping Server...","caller":"app/server.go:922"}
+{"timestamp":"2022-04-13 18:15:32.472 Z","level":"info","msg":"stopping websocket hub connections","caller":"app/web_hub.go:113"}
+{"timestamp":"2022-04-13 18:15:32.490 Z","level":"info","msg":"Stopped workers","caller":"jobs/workers.go:353"}
+{"timestamp":"2022-04-13 18:15:32.490 Z","level":"info","msg":"Stopping schedulers.","caller":"jobs/schedulers.go:187"}
+{"timestamp":"2022-04-13 18:15:32.490 Z","level":"info","msg":"Schedulers stopped.","caller":"jobs/schedulers.go:119"}
+{"timestamp":"2022-04-13 18:15:32.498 Z","level":"info","msg":"Server stopped","caller":"app/server.go:1002"}
+{"timestamp":"2022-04-13 18:15:32.498 Z","level":"info","msg":"Shutting down plugins","caller":"app/plugin.go:339"}
+{"timestamp":"2022-04-13 18:15:32.513 Z","level":"info","msg":"Server.Shutdown","caller":"app/plugin_api.go:925","plugin_id":"focalboard"}
+{"timestamp":"2022-04-13 18:15:44.528 Z","level":"info","msg":"Server is initializing...","caller":"app/server.go:237","go_version":"go1.16.7"}
+{"timestamp":"2022-04-13 18:15:44.531 Z","level":"info","msg":"Starting websocket hubs","caller":"app/web_hub.go:93","number_of_hubs":8}
+{"timestamp":"2022-04-13 18:15:44.532 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 18:15:44.535 Z","level":"error","msg":"Failed to ping DB","caller":"sqlstore/store.go:272","error":"dial tcp 172.25.0.3:5432: connect: connection refused","retrying in seconds":10}
+{"timestamp":"2022-04-13 18:15:54.501 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 18:15:54.725 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"migrations"}
+{"timestamp":"2022-04-13 18:15:55.357 Z","level":"info","msg":"Loaded system translations","caller":"i18n/i18n.go:93","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"timestamp":"2022-04-13 18:15:55.389 Z","level":"info","msg":"License key from https://mattermost.com required to unlock enterprise features.","caller":"app/license.go:90"}
+{"timestamp":"2022-04-13 18:15:55.396 Z","level":"info","msg":"Current version is 6.3.7 (6.3.7/Thu Apr  7 13:04:32 UTC 2022/f4c68a97a1934994663fcb33dea0899238e79704/2fa46d17d792c4b2d334880d2923ac15d028b076)","caller":"app/server.go:514","current_version":"6.3.7","build_number":"6.3.7","build_date":"Thu Apr  7 13:04:32 UTC 2022","build_hash":"f4c68a97a1934994663fcb33dea0899238e79704","build_hash_enterprise":"2fa46d17d792c4b2d334880d2923ac15d028b076"}
+{"timestamp":"2022-04-13 18:15:55.396 Z","level":"info","msg":"Enterprise Build","caller":"app/server.go:523","enterprise_build":true}
+{"timestamp":"2022-04-13 18:15:55.396 Z","level":"info","msg":"Printing current working","caller":"app/server.go:529","directory":"/mattermost"}
+{"timestamp":"2022-04-13 18:15:55.435 Z","level":"info","msg":"Starting workers","caller":"jobs/workers.go:140"}
+{"timestamp":"2022-04-13 18:15:55.435 Z","level":"info","msg":"Starting schedulers.","caller":"jobs/schedulers.go:116"}
+{"timestamp":"2022-04-13 18:15:55.498 Z","level":"info","msg":"License key from https://mattermost.com required to unlock enterprise features.","caller":"app/license.go:90"}
+{"timestamp":"2022-04-13 18:15:55.702 Z","level":"info","msg":"Starting up plugins","caller":"app/plugin.go:185"}
+{"timestamp":"2022-04-13 18:15:55.702 Z","level":"info","msg":"Syncing plugins from the file store","caller":"app/plugin.go:259"}
+{"timestamp":"2022-04-13 18:15:58.030 Z","level":"info","msg":"Ensuring Surveybot exists","caller":"app/plugin_api.go:925","plugin_id":"com.mattermost.nps"}
+{"timestamp":"2022-04-13 18:15:59.284 Z","level":"info","msg":"connectDatabase","caller":"app/plugin_api.go:925","plugin_id":"focalboard","dbType":"postgres"}
+{"timestamp":"2022-04-13 18:15:59.383 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyMentions"}
+{"timestamp":"2022-04-13 18:15:59.388 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifySubscriptions"}
+{"timestamp":"2022-04-13 18:15:59.390 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyLogger"}
+{"timestamp":"2022-04-13 18:15:59.397 Z","level":"info","msg":"Server.Start","caller":"app/plugin_api.go:925","plugin_id":"focalboard"}
+{"timestamp":"2022-04-13 18:15:59.515 Z","level":"error","msg":"Mail server connection test is failed","caller":"app/server.go:1141","error":"unable to connect: unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 18:15:59.525 Z","level":"info","msg":"Starting Server...","caller":"app/server.go:1163"}
+{"timestamp":"2022-04-13 18:15:59.525 Z","level":"info","msg":"Server is listening on [::]:8065","caller":"app/server.go:1236","address":"[::]:8065"}
+{"timestamp":"2022-04-13 18:16:13.482 Z","level":"info","msg":"Post.Message has size restrictions","caller":"sqlstore/post_store.go:2207","max_characters":16383,"max_bytes":65535}
+{"timestamp":"2022-04-13 18:18:47.387 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": address forbidden, you may need to set AllowedUntrustedInternalConnections to allow an integration access to your internal network"}
+{"timestamp":"2022-04-13 18:27:38.698 Z","level":"warn","msg":"Unrecognized config permissions tag value.","caller":"api4/config.go:380","tag_value":"sysconsole_write_*_read"}
+{"timestamp":"2022-04-13 18:28:22.760 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": address forbidden, you may need to set AllowedUntrustedInternalConnections to allow an integration access to your internal network"}
+{"timestamp":"2022-04-13 18:29:37.330 Z","level":"warn","msg":"Unrecognized config permissions tag value.","caller":"api4/config.go:380","tag_value":"sysconsole_write_*_read"}
+{"timestamp":"2022-04-13 18:29:48.589 Z","level":"error","msg":"Event POST failed.","caller":"app/webhook.go:119","error":"Post \"http://mock-server:1080\": address forbidden, you may need to set AllowedUntrustedInternalConnections to allow an integration access to your internal network"}
+{"timestamp":"2022-04-13 18:30:49.488 Z","level":"warn","msg":"Unrecognized config permissions tag value.","caller":"api4/config.go:380","tag_value":"sysconsole_write_*_read"}
+{"timestamp":"2022-04-13 18:39:24.315 Z","level":"error","msg":"Error while sending the email","caller":"app/notification_email.go:117","user_email":"notify@localhost","error":"unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 18:40:06.985 Z","level":"error","msg":"Error while sending the email","caller":"app/notification_email.go:117","user_email":"notify@localhost","error":"unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 18:49:14.915 Z","level":"error","msg":"Error while sending the email","caller":"app/notification_email.go:117","user_email":"notify@localhost","error":"unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 19:11:31.190 Z","level":"error","msg":"Command with a trigger of 'notify' returned response 404 Not Found.","caller":"web/context.go:105","path":"/api/v4/commands/execute","request_id":"h6ggyg354trsjxpz1jrqugtuzy","ip_addr":"172.25.0.1","user_id":"a6khpd5m77d3de46xw599mp8by","method":"POST","err_where":"command","http_code":500,"err_details":""}
+{"timestamp":"2022-04-13 19:21:50.464 Z","level":"error","msg":"Command with a trigger of 'notify' returned response 404 Not Found.","caller":"web/context.go:105","path":"/api/v4/commands/execute","request_id":"wuc46ep7wpy9xnsd65u8deztbo","ip_addr":"172.25.0.1","user_id":"a6khpd5m77d3de46xw599mp8by","method":"POST","err_where":"command","http_code":500,"err_details":""}
+{"timestamp":"2022-04-13 19:30:59.856 Z","level":"info","msg":"Worker: Job is complete","caller":"product_notices/worker.go:85","worker":"ProductNotices","job_id":"xw913oqroirozrd9psu75twj7h"}
+{"timestamp":"2022-04-13 20:19:45.120 Z","level":"info","msg":"Server is initializing...","caller":"app/server.go:237","go_version":"go1.16.7"}
+{"timestamp":"2022-04-13 20:19:45.122 Z","level":"info","msg":"Starting websocket hubs","caller":"app/web_hub.go:93","number_of_hubs":8}
+{"timestamp":"2022-04-13 20:19:45.122 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 20:19:45.126 Z","level":"error","msg":"Failed to ping DB","caller":"sqlstore/store.go:272","error":"dial tcp 172.29.0.3:5432: connect: connection refused","retrying in seconds":10}
+{"timestamp":"2022-04-13 20:19:55.126 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"master"}
+{"timestamp":"2022-04-13 20:19:55.374 Z","level":"info","msg":"Pinging SQL","caller":"sqlstore/store.go:262","database":"migrations"}
+{"timestamp":"2022-04-13 20:19:56.179 Z","level":"info","msg":"Loaded system translations","caller":"i18n/i18n.go:93","for locale":"en","from locale":"/mattermost/i18n/en.json"}
+{"timestamp":"2022-04-13 20:19:56.215 Z","level":"info","msg":"License key from https://mattermost.com required to unlock enterprise features.","caller":"app/license.go:90"}
+{"timestamp":"2022-04-13 20:19:56.228 Z","level":"info","msg":"Current version is 6.3.7 (6.3.7/Thu Apr  7 13:04:32 UTC 2022/f4c68a97a1934994663fcb33dea0899238e79704/2fa46d17d792c4b2d334880d2923ac15d028b076)","caller":"app/server.go:514","current_version":"6.3.7","build_number":"6.3.7","build_date":"Thu Apr  7 13:04:32 UTC 2022","build_hash":"f4c68a97a1934994663fcb33dea0899238e79704","build_hash_enterprise":"2fa46d17d792c4b2d334880d2923ac15d028b076"}
+{"timestamp":"2022-04-13 20:19:56.228 Z","level":"info","msg":"Enterprise Build","caller":"app/server.go:523","enterprise_build":true}
+{"timestamp":"2022-04-13 20:19:56.229 Z","level":"info","msg":"Printing current working","caller":"app/server.go:529","directory":"/mattermost"}
+{"timestamp":"2022-04-13 20:19:56.229 Z","level":"info","msg":"Loaded config","caller":"app/server.go:530","source":"file:///mattermost/config/config.json"}
+{"timestamp":"2022-04-13 20:19:56.282 Z","level":"info","msg":"Starting workers","caller":"jobs/workers.go:140"}
+{"timestamp":"2022-04-13 20:19:56.282 Z","level":"info","msg":"Starting schedulers.","caller":"jobs/schedulers.go:116"}
+{"timestamp":"2022-04-13 20:19:56.293 Z","level":"info","msg":"License key from https://mattermost.com required to unlock enterprise features.","caller":"app/license.go:90"}
+{"timestamp":"2022-04-13 20:19:56.715 Z","level":"info","msg":"Starting up plugins","caller":"app/plugin.go:185"}
+{"timestamp":"2022-04-13 20:19:56.715 Z","level":"info","msg":"Syncing plugins from the file store","caller":"app/plugin.go:259"}
+{"timestamp":"2022-04-13 20:19:59.833 Z","level":"info","msg":"Ensuring Surveybot exists","caller":"app/plugin_api.go:925","plugin_id":"com.mattermost.nps"}
+{"timestamp":"2022-04-13 20:20:01.273 Z","level":"info","msg":"connectDatabase","caller":"app/plugin_api.go:925","plugin_id":"focalboard","dbType":"postgres"}
+{"timestamp":"2022-04-13 20:20:01.374 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyMentions"}
+{"timestamp":"2022-04-13 20:20:01.378 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifySubscriptions"}
+{"timestamp":"2022-04-13 20:20:01.381 Z","level":"info","msg":"Initialized notification backend","caller":"app/plugin_api.go:925","plugin_id":"focalboard","name":"notifyLogger"}
+{"timestamp":"2022-04-13 20:20:01.389 Z","level":"info","msg":"Server.Start","caller":"app/plugin_api.go:925","plugin_id":"focalboard"}
+{"timestamp":"2022-04-13 20:20:01.609 Z","level":"error","msg":"Mail server connection test is failed","caller":"app/server.go:1141","error":"unable to connect: unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-13 20:20:01.621 Z","level":"info","msg":"Starting Server...","caller":"app/server.go:1163"}
+{"timestamp":"2022-04-13 20:20:01.621 Z","level":"info","msg":"Server is listening on [::]:8065","caller":"app/server.go:1236","address":"[::]:8065"}
+{"timestamp":"2022-04-13 20:20:37.983 Z","level":"info","msg":"Post.Message has size restrictions","caller":"sqlstore/post_store.go:2207","max_characters":16383,"max_bytes":65535}
+{"timestamp":"2022-04-14 07:30:09.845 Z","level":"info","msg":"Worker: Job is complete","caller":"product_notices/worker.go:85","worker":"ProductNotices","job_id":"u1qifym1jbn4mxhphqxn8fx8no"}
+{"timestamp":"2022-04-14 08:32:53.889 Z","level":"info","msg":"Worker: Job is complete","caller":"product_notices/worker.go:85","worker":"ProductNotices","job_id":"fwyojipnhfba7bg9eqpc5gbj7r"}
+{"timestamp":"2022-04-14 13:55:06.816 Z","level":"info","msg":"Worker: Job is complete","caller":"product_notices/worker.go:85","worker":"ProductNotices","job_id":"rpx1mrbwi7f6iyc34wxkishc7w"}
+{"timestamp":"2022-04-14 16:12:27.856 Z","level":"info","msg":"Worker: Job is complete","caller":"product_notices/worker.go:85","worker":"ProductNotices","job_id":"e6xukwhuztrr3j3ss51ceycmee"}
+{"timestamp":"2022-04-14 16:57:53.114 Z","level":"warn","msg":"Error while creating session for user access token","caller":"app/session.go:89","error":"createSessionForUserAccessToken: Invalid or missing token., resource: UserAccessToken id: token=o4nutnjru3gdbccukj4q5iprec"}
+{"timestamp":"2022-04-14 16:57:53.114 Z","level":"info","msg":"Invalid session","caller":"web/handlers.go:254","error":"GetSession: Invalid session token=o4nutnjru3gdbccukj4q5iprec, err=, "}
+{"timestamp":"2022-04-14 17:08:01.503 Z","level":"warn","msg":"Error while creating session for user access token","caller":"app/session.go:89","error":"createSessionForUserAccessToken: Invalid or missing token., resource: UserAccessToken id: token=o4nutnjru3gdbccukj4q5iprec"}
+{"timestamp":"2022-04-14 17:08:01.503 Z","level":"info","msg":"Invalid session","caller":"web/handlers.go:254","error":"GetSession: Invalid session token=o4nutnjru3gdbccukj4q5iprec, err=, "}
+{"timestamp":"2022-04-14 17:09:37.301 Z","level":"warn","msg":"Error while creating session for user access token","caller":"app/session.go:89","error":"createSessionForUserAccessToken: Invalid or missing token., resource: UserAccessToken id: token=o4nutnjru3gdbccukj4q5iprec"}
+{"timestamp":"2022-04-14 17:09:37.301 Z","level":"info","msg":"Invalid session","caller":"web/handlers.go:254","error":"GetSession: Invalid session token=o4nutnjru3gdbccukj4q5iprec, err=, "}
+{"timestamp":"2022-04-14 17:37:26.905 Z","level":"warn","msg":"Error while creating session for user access token","caller":"app/session.go:89","error":"createSessionForUserAccessToken: Invalid or missing token., resource: UserAccessToken id: token=<Access Token>"}
+{"timestamp":"2022-04-14 17:37:26.905 Z","level":"info","msg":"Invalid session","caller":"web/handlers.go:254","error":"GetSession: Invalid session token=<Access Token>, err=, "}
+{"timestamp":"2022-04-14 17:40:10.159 Z","level":"error","msg":"Error while sending the email","caller":"app/notification_email.go:117","user_email":"notify@localhost","error":"unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
+{"timestamp":"2022-04-14 17:41:17.526 Z","level":"info","msg":"Worker: Job is complete","caller":"product_notices/worker.go:85","worker":"ProductNotices","job_id":"ggjjo6hdebbaikd4erfxxcm36e"}
+{"timestamp":"2022-04-14 17:51:56.382 Z","level":"error","msg":"Error while sending the email","caller":"app/notification_email.go:117","user_email":"e.musk@mail","error":"unable to connect to the SMTP server: dial tcp 127.0.0.1:10025: connect: connection refused"}
